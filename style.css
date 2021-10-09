@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+body{
+  font-family: 'noto sans kr', sans serif;
+  line-height: 1.5em;
+  margin: 0;
+  background-color: #eee;
+  font-size: 15px;
+  font-weight: 300;
+}
+a{
+  text-decoration: none;
+  color: #222;
+}
+.container{}
+header{
+  border-bottom: 1px solid lightgray;
+  background-color: #fff;
+  height: 60px;
+  text-align: center;
+  padding-top: 13px;
+  box-sizing: border-box;
+}
+section{
+  height: calc(100vh - 60px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login{
+  width: 360px;
+}
+.login-type h1{
+  margin-top: 0;
+  font-size: 38px;
+  text-align: center;
+  font-weight: normal;
+}
+.btn{
+  border: 1px solid ightgray;
+  display: block; /*100%니까 부모360픽셀이쟌아*/
+  text-align: center;
+  /* height: 50px;
+  line-height: 50px; */
+  padding: 13px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  font-size: 18px;
+  color: #fff;
+  opacity: 0.8;
+  transition: 0.2s;
+}/*nth-child는 동급을 다 세어버림(태그를 체크안하니까)1이 h1..동급의 앞에것도 세어버림..종류 상관없이 */
+.btn:hover{
+  opacity: 1;
+}
+.btn:nth-of-type(1){
+  color: #222;
+  background: #fff url(logo-mobile.png)no-repeat center left 10px;
+}
+.btn:nth-of-type(2){
+  background: #898c96 url(logo-email.png)no-repeat center left 10px;
+}
+.btn:nth-of-type(3){
+  background: #11ce00 url(logo-naver.png)no-repeat center left 10px;
+}
+.btn:nth-of-type(4){
+  background: #0076f2 url(logo-facebook.png)no-repeat center left 10px;
+}
+.btn:nth-of-type(5){
+  background: #00c026 url(logo-line.png)no-repeat center left 10px;
+}
+.or-text{
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+  position: relative;
+}
+.or-text:before,
+.or-text:after{
+  content: "";
+  position:absolute;
+  top: 50%;
+  background-color: lightgray;
+  width: 44%;
+  height: 1px;
+}
+.or-text:after{
+  right: 0;
+}
+.or-text:before{
+  left: 0;
+}
+.login-footer{}
+.login-footer p{
+  text-align: center;
+}
+.login-footer a{
+  text-align: center;
+  font-weight: normal;
+}
+.login-footer a:hover{
+  text-decoration: underline;
+}
